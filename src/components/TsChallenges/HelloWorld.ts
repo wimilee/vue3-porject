@@ -5,6 +5,7 @@ import { Equal, Expect, NotAny } from '@type-challenges/utils'
 
 type cases = [Expect<NotAny<HelloWorld>>, Expect<Equal<HelloWorld, string>>]
 const hw: HelloWorld = '3'
-const apple: HelloWorld = 4
+//const apple: HelloWorld = 4
 console.log(hw)
-console.log(apple)
+console.log('----')
+//console.log(apple)
