@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@type-challenges/utils": "^0.1.1",
     "roboto-fontface": "*",
     "vue": "^3.2.25",
     "vue-class-component": "^8.0.0-0",
