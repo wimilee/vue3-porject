@@ -1,24 +1,28 @@
-let hw = '华为'
-//hw = 2 //不能将类型“number”分配给类型“string”
-console.log(typeof hw) // node type.js ==> number
-console.log(hw) //2
-let state = true
-console.log(typeof state)
+const red: string = '红色'
+const age: number = 18
+const man: boolean = true
 //arr
-const arr = ['huawei', 'apple']
-//arr.push(3) //"类型“number”的参数不能赋给类型“string”的参数
-console.log(arr) // node type.js ==>[ 'huawei', 'apple', 3 ]
+let phone: string[] = []
+phone.push('hw', 'xiaomi')
+//泛型
+let school: Array<string> = []
+school.push('teacher', 'student')
 
-const arr2 = ['huawei', 'xiaomi', 2]
-arr2.push('apple', 1)
-console.log(arr2) //[ 'huawei', 'xiaomi', 2, 'apple', 1 ]
+let website = new Array<string>(3).fill('www.baidu.com', 1, 2)
+console.log(phone)
+console.log(school)
+console.log(website)
+//元祖
+let boy: [string, number, boolean] = ['jack', 18, false]
+console.log(boy)
+//对象
+let woman: { name: string; age: number } = { name: 'rose', age: 24 }
 
-//object
-const human = { name: 'jack', age: 18, isman: true }
-console.log(typeof human.name)
-console.log(typeof human.age)
-console.log(typeof human.isman)
-
-const girl = { name: 'rose', age: 21, isman: false, relation: [{ dad: 'mark' }, { mom: 'jerry' }] }
-
-console.log(typeof girl.relation[1].mom)
+console.log(woman)
+//union
+let score: string | number = '不及格'
+console.log(score)
+score = 59
+console.log(score)
+let iphone: (string | number | boolean)[] = [9999, '苹果', 31, true]
+console.log(iphone)
