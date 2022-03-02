@@ -66,3 +66,20 @@ let hd: unknown = 'howdo'
 //let a:string = hd  不能将类型unknown 分配给string
 let b: string = hd as string
 console.log(b)
+
+//枚举
+
+enum sex {
+  boy,
+  girl,
+}
+
+console.log(sex.boy)
+
+enum boys {
+  like = 1,
+  age,
+  meimei = 'san',
+  gege,
+}
+console.log(boys.age)
