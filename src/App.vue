@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <vuetifyVue />
+      <canvasExp />
     </v-main>
   </v-app>
 </template>
@@ -10,13 +10,15 @@
 import { defineComponent } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import vuetifyVue from './components/vuetify.vue'
+import canvasExp from './components/canvas.vue'
 
 export default defineComponent({
   name: 'App',
 
   components: {
     HelloWorld,
-    vuetifyVue
+    vuetifyVue,
+    canvasExp
   },
 
   data() {

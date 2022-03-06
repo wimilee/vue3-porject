@@ -79,7 +79,6 @@ console.log(sex.boy)
 enum boys {
   like = 1,
   age,
-  meimei = 'san',
-  gege,
+  meimei = 'san'
 }
 console.log(boys.age)
