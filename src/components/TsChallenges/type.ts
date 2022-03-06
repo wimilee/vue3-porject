@@ -79,6 +79,21 @@ console.log(sex.boy)
 enum boys {
   like = 1,
   age,
-  meimei = 'san'
+  meimei = 'san',
 }
 console.log(boys.age)
+
+//dom
+
+const sb = document.querySelector('hd')
+console.log(sb instanceof Element) //false
+
+const body = document.querySelector('body') as HTMLBodyElement
+console.log(body instanceof Element)
+//非空断言 ！
+const wimi = document.querySelector('.wimi')!
+console.log(wimi instanceof HTMLDivElement)
+
+const ahref = document.querySelector('.wimi') as HTMLAnchorElement
+console.log(ahref instanceof HTMLAnchorElement)
+console.log(ahref.href)
