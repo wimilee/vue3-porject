@@ -97,3 +97,9 @@ console.log(wimi instanceof HTMLDivElement)
 const ahref = document.querySelector('.wimi') as HTMLAnchorElement
 console.log(ahref instanceof HTMLAnchorElement)
 console.log(ahref.href)
+
+const bt = document.querySelector('btn') as HTMLButtonElement
+bt.addEventListener('click', (e: Event) => {
+  e.preventDefault()
+  body.insertAdjacentHTML('beforeend', '<div>这是个按钮</div>')
+})
